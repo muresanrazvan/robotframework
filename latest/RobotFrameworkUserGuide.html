@@ -3147,7 +3147,7 @@ a test case can fail multiple times. In that case the final error message
 is got by combining the individual errors. Very long error messages are
 automatically cut from the middle to keep <a class="reference internal" href="#report-file">reports</a> easier to read. Full
 error messages are always visible in <a class="reference internal" href="#log-file">log</a> file as a message of the failed
-keyword.</p>
+keyword. The default limit for the number of error lines is 40. The limit can be changed with <span class="option">--maxerrorlines</span> command line option.</p>
 <p>By default error messages are normal text, but
 starting from Robot Framework 2.8 they can <a class="reference internal" href="#html-in-error-messages">contain HTML formatting</a>. This
 is enabled by starting the error message with marker string <code>*HTML*</code>.
@@ -14267,7 +14267,11 @@ browser transparently.</td></tr>
 </tr>
 <tr><td>&nbsp;</td><td><a class="reference internal" href="#setting-background-colors">Sets background colors</a> of the generated report.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-L</span>, <span class="option">--loglevel <var>&lt;level&gt;</var></span></kbd></td>
+<kbd><span class="option">--maxerrorlines <var>&lt;lines&gt;</var></span></kbd></td>
+</tr>
+<tr><td>&nbsp;</td><td>Sets a limit for the number of <a class="reference internal" href="#error-messages">error lines</a> created by a test case. By default the limit is set to 40.</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">--loglevel <var>&lt;level&gt;</var></span></kbd></td>
 </tr>
 <tr><td>&nbsp;</td><td><a class="reference internal" href="#setting-log-level">Sets the threshold level</a> for logging. Optionally
 the default <a class="reference internal" href="#visible-log-level">visible log level</a> can be given
