@@ -43,8 +43,8 @@ Command line options for test execution
   --logtitle <title>      `Sets a title`_ for the generated test log.
   --reporttitle <title>   `Sets a title`_ for the generated test report.
   --reportbackground <colors>  `Sets background colors`_ of the generated report.
-  --maxerrorlines <value>  Sets the limit for the number of error lines displayed on the console.
-                          The default limit is set to 40 lines.
+  --maxerrorlines <lines>  Sets the limit for the number of `error lines`_ created by a test case.
+                          By default the limit is set to 40.
   -L, --loglevel <level>  `Sets the threshold level`_ for logging. Optionally
                           the default `visible log level`_ can be given
                           separated with a colon (:).
